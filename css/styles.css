@@ -59,17 +59,17 @@ a {
 }
 
 /* unvisited link */
-a:link {
+/* a:link {
     color: red;
 }
 
 /* visited link */
-a:visited {
+/* a:visited {
     color: green;
 }
 
 /* mouse over link */
-a:hover {
+/* a:hover {
     color: hotpink;
     font-size: 50px;
     background-color: yellow;
@@ -78,7 +78,7 @@ a:hover {
 }
 
 /* selected link */
-a:active {
+/* a:active {
     color: blue;
 }
 
@@ -110,7 +110,7 @@ a:active {
 --lighter-red: #dc3439;
 
 --white: #FFF;
---blank: #000;
+--black: #000;
 
 /* MARGINS */
 --margin1: 10px;
@@ -150,4 +150,77 @@ h3 {
     font-size: var(--fontsize3);
     margin: var(--margin3);
     padding: var(--padding3);
+}
+
+.button-container a {
+    width: 200px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #F00;
+
+    /* ROUNDING THE CORNORS */
+    border-radius: 10px;
+
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+
+    /* Let's get rid of the underline */
+    text-decoration: none;
+
+    /* Transition effect */
+    transition: all 0.5s ease;
+}
+
+.button-container a:hover {
+    background-color: #AF1F16;
+    text-decoration: none;
+}
+
+.button-container2 a {
+    width: 200px;
+    padding: 10px;
+    color: #FFF;
+    background-color: var(--black);
+    
+    /* ROUNDING THE CORNORS */
+    border-radius: 10px;
+
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+
+    /* Let's get rid of the underline */
+    text-decoration: none;
+
+    /* Transition effect */
+    transition: all 0.5s ease;    
+}
+
+.button-container2 a:hover {
+    background-color: var(--dark-brown);
+    text-decoration: none;
+}
+
+.button-container3 a {
+    width: 200px;
+    padding: 10px;
+    color: #FFF;
+    background: linear-gradient(to bottom, #000099 0%, #00ffff 100%);
+
+    /* ROUNDING THE CORNORS */
+    border-radius: 10px;
+
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+
+    /* Let's get rid of the underline */
+    text-decoration: none;
+
+    /* Transition effect */
+    transition: all 0.5s ease; 
 }
