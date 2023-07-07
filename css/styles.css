@@ -81,3 +81,73 @@ a:hover {
 a:active {
     color: blue;
 }
+
+
+/* At the top of the file */
+:root {
+
+/* FONTS */
+--regular: "Arial";
+--different1: "Gill sans";
+--different2: "Trebuchet MS";
+
+/* FONT SIZE */
+--fontsize1: 14px;
+--fontsize2: 50px;
+--fontsize3: 100px;
+
+/* FONT STYLE */
+--bold: bold;
+--italic: italic;
+--oblique: oblique;
+
+/* COLORS */
+--dark-brown: #402214;
+--lighter-brown: #774231;
+--lightest-brown: #aa4b1b;
+
+--darker-red: #b31714;
+--lighter-red: #dc3439;
+
+--white: #FFF;
+--blank: #000;
+
+/* MARGINS */
+--margin1: 10px;
+--margin2: 100px;
+--margin3: 200px;
+
+/* PADDING */
+--padding1: 20px;
+--padding2: 50px;
+--padding3: 100px;
+
+}
+
+/* Usage */
+h1 {
+    font-family: var(--regular);
+    color: var(--darker-red);
+    font-style: var(--italic);
+    font-size: var(--fontsize1);
+    margin: var(--margin1);
+    padding: var(--padding1);
+}
+
+h2 {
+    font-family: var(--different1);
+    color: var(--dark-brown);
+    font-style: var(--bold);
+    font-size: var(--fontsize2);
+    margin: var(--margin2);
+    padding: var(--padding2);
+}
+
+h3 {
+    font-family: var(--different2);
+    color: var(--lightest-brown);
+    font-style: var(--oblique);
+    font-size: var(--fontsize3);
+    margin: var(--margin3);
+    padding: var(--padding3);
+}
