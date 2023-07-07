@@ -57,3 +57,27 @@ a {
     width: 200px;
     height: 200px;
 }
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    font-size: 50px;
+    background-color: yellow;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
